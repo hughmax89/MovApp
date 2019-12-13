@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="start"
+                    android:ems="12"
+                    android:gravity="center_horizontal"
+                    android:text="The Movie DB"
+                    android:background="@color/md_green_800"
+                    android:textColor="@color/gray_light"
+                    android:textColorHint="@color/md_cyan_300"
+                    android:textColorLink="@color/md_indigo_400"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:background="@color/gray_light"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/movie"
+                android:textColor="@color/md_green_800"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btn_movie_pop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/popular"
+                android:background="@color/md_green_800"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btn_movie_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/toprated"
+                android:background="@color/md_green_800"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btn_movie_upcoming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/popular"
+                android:background="@color/md_green_800"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_light"
+            android:orientation="vertical"
+            android:layout_below="@id/title1"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/series"
+                android:textColor="@color/md_green_800"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btn_series_pop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/popular"
+                android:background="@color/md_green_800"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btn_series_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/toprated"
+                android:background="@color/md_green_800"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btn_series_upcoming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/popular"
+                android:background="@color/md_green_800"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
